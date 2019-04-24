@@ -9,7 +9,7 @@ class App < Sinatra::Base
   get '/square/:number' do
     "#{params[:number]*params[:number]}"
   end
-
+=begin
   get '/say/:number/:phrase'
     params[:number].times do
       params[:phrase]
@@ -29,4 +29,5 @@ class App < Sinatra::Base
     "#{num1*num2}"
     "#{num1/num2}"
   end
+=end
 end
