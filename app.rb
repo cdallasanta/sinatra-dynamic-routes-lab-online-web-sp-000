@@ -5,7 +5,7 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     "#{params[:name].reverse}"
   end
-=begin
+
   get '/square/:number' do
     "#{params[:number]*params[:number]}"
   end
@@ -22,12 +22,11 @@ class App < Sinatra::Base
 
   get '/operation/:number1/:number2' do
     num1 = params[:number1].to_i
-    num2 = params[;number2].to_i
+    num2 = params[:number2].to_i
 
     "#{num1+num2}"
     "#{num1-num2}"
     "#{num1*num2}"
     "#{num1/num2}"
   end
-=end
 end
