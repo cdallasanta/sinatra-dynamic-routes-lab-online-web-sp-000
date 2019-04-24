@@ -7,7 +7,8 @@ class App < Sinatra::Base
   end
 
   get '/square/:number' do
-    "#{params[:number]*params[:number]}"
+    binding.pry
+    "#{params[:number] * params[:number]}"
   end
 
   get '/say/:number/:phrase' do
