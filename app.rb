@@ -10,7 +10,7 @@ class App < Sinatra::Base
     "#{params[:number]*params[:number]}"
   end
 
-  get '/say/:number/:phrase'
+  get '/say/:number/:phrase' do
   binding.pry
     params[:number].times do
       params[:phrase]
